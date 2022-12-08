@@ -1,4 +1,4 @@
 install:
 	npm ci
-help:
-	gendiff -h
+lint:
+	npx eslint .
