@@ -8,7 +8,12 @@ program
   .version('1.0.0')
   .argument('<filepath1>')
   .argument('<filepath2>')
-  .option('-f, --format <type>', 'output format')
-  .action((filepath1, filepath2) => console.log(differencesGenerator(filepath1, filepath2)));
+  .option('-f, --format <type>', 'output format', 'stylish')
+  .action((filepath1, filepath2, options) => {
+    if (options.format === 'plain') {
+      return console.log(differencesGenerator(filepath1, filepath2, 'plain'));
+    }
+    return console.log(differencesGenerator(filepath1, filepath2, 'stylish'));
+  });
 
 program.parse();
