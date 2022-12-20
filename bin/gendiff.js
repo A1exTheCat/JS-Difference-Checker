@@ -13,6 +13,9 @@ program
     if (options.format === 'plain') {
       return console.log(differencesGenerator(filepath1, filepath2, 'plain'));
     }
+    if (options.format === 'json') {
+      return console.log(differencesGenerator(filepath1, filepath2, 'json'));
+    }
     return console.log(differencesGenerator(filepath1, filepath2, 'stylish'));
   });
 
