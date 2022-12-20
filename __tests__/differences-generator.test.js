@@ -2,8 +2,11 @@ import path from 'node:path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import differencesGenerator from '../lib/Differences-generator.js';
-import { deepExpectedResult as deepExpected, plainExpectedResult as plainExpected }
-  from '../__fixtures__/tests_expected.js';
+import {
+  deepExpectedResult as deepExpected,
+  plainExpectedResult as plainExpected,
+  jsonExpectedResult as jsonExpected,
+} from '../__fixtures__/tests_expected.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -28,4 +31,11 @@ test('differencesGenerator_PlainFormat', () => {
   const path2 = getFixturePath('file2.yaml');
   const diff = differencesGenerator(path1, path2, 'plain');
   expect(diff).toEqual(plainExpected);
+});
+
+test('differencesGenerator_JsonFormat', () => {
+  const path1 = getFixturePath('file1.json');
+  const path2 = getFixturePath('file2.yaml');
+  const diff = differencesGenerator(path1, path2, 'json');
+  expect(diff).toEqual(jsonExpected);
 });
