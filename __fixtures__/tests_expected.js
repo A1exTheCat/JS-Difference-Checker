@@ -1,4 +1,5 @@
-const deepExpectedResult = `    common: {
+const deepExpectedResult = `{
+    common: {
       + follow: false
         setting1: Value 1
       - setting2: 200
@@ -39,7 +40,8 @@ const deepExpectedResult = `    common: {
             }
         }
         fee: 100500
-    }`;
+    }
+}`;
 
 const plainExpectedResult = `Property 'common.follow' was added with value: false
 Property 'common.setting2' was removed
