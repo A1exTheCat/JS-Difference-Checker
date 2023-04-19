@@ -18,7 +18,7 @@ $ cd frontend-project-lvl2
 $ make install
 ```
 ## Usage:
-
+```sh
 gendiff [options] <filepath1> <filepath2>
 
 Compares two configuration files and shows a difference.
@@ -27,6 +27,7 @@ Options:
   -V, --version        output the version number
   -f, --format <type>  output format (json, plain or stylish) (default: "stylish")
   -h, --help           display help for command
+```
 
 ### Demo:
 * [JSON file diff in stylish (default) format](https://asciinema.org/a/578639)
