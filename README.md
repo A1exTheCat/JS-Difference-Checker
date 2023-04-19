@@ -17,6 +17,19 @@ $ git clone https://github.com/A1exTheCat/JS-Difference-Checker.git
 $ cd frontend-project-lvl2
 $ make install
 ```
+## Usage:
+
+gendiff [options] <filepath1> <filepath2>
+
+Compares two configuration files and shows a difference.
+
+Options:
+  -V, --version        output the version number
+  -f, --format <type>  output format (json, plain or stylish) (default: "stylish")
+  -h, --help           display help for command
 
 ### Demo:
-* [JSON difference](https://asciinema.org/a/544093)
+* [JSON file diff in stylish (default) format](https://asciinema.org/a/578639)
+* [YAML file diff in stylish (default) format](https://asciinema.org/a/578638)
+* [JSON file diff in plain format](https://asciinema.org/a/578640)
+* [JSON file diff in JSON format](https://asciinema.org/a/578641)
