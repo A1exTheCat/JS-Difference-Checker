@@ -16,8 +16,6 @@ Utility that compares two configuration files and shows a difference
 $ git clone https://github.com/A1exTheCat/JS-Difference-Checker.git
 $ cd frontend-project-lvl2
 $ make install
-$ make publish
-$ npm link
 ```
 
 ### Demo:
