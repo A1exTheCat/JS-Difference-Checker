@@ -74,6 +74,3 @@ Options:
 * [YAML file diff in stylish (default) format](https://asciinema.org/a/578638)
 * [JSON file diff in plain format](https://asciinema.org/a/578640)
 * [JSON file diff in JSON format](https://asciinema.org/a/578641)
-
-#### App demo:
-[![asciicast](https://asciinema.org/a/578639.svg)](https://asciinema.org/a/578639)
